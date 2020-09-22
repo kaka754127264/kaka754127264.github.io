@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>delphi子界</title>
+      <link href="2020/09/22/delphi%E5%AD%90%E7%95%8C/"/>
+      <url>2020/09/22/delphi%E5%AD%90%E7%95%8C/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>delphi枚举</title>
+      <link href="2020/09/22/delphi%E6%9E%9A%E4%B8%BE/"/>
+      <url>2020/09/22/delphi%E6%9E%9A%E4%B8%BE/</url>
+      
+        <content type="html"><![CDATA[<p>{<br>枚举；<br>常量集</p><p>常量，我们一开始就定义好的一些值，以后在程序的运行过程中不允许改变，例如圆周率<br>type<br>枚举名=(标识符1,标识符2…’)  ，不能使用字符串跟具体的值</p><p>}</p><p>const<br>  yuanzhoulv: Double = 3.15;<br>  //常量的定义方式，可以不进行类型声明，编译器会根据具体的值来决定常量的类型<br>  yuanzhoulv2 = 3;</p><p>type<br>//（<em>正常情况下索引都是从0开始</em> name=value）<br>  Edays = (sun = 0, mon = 1, tue = 2, wed = 3, thu = 4, fir = 5, sat = 6);</p><p>  Ecolor = (red, green, blue);</p><p>  //获取枚举中的单个元素<br>procedure demo1();<br>begin<br>  Color := Ecolor.blue;<br>  week := Edays.sun;</p><p>  Writeln(Ord(Color), Ord(week), Ord(‘a’));<br>end;</p><p>//使用循环遍历，枚举元素<br>procedure demo2();<br>begin<br>             //获取一个容器的最低位<br>       //遍历枚举<br>  Eindex := 0;<br>  for Color := Low(Ecolor) to High(Ecolor) do<br>  begin<br>//    Writeln(GetEnumName(TypeInfo(Ecolor), Eindex));<br>//    Writeln(GetEnumValue(TypeInfo(Ecolor), ‘red’));<br>    Ename := GetEnumName(TypeInfo(Ecolor), Eindex);<br>    Evalue := GetEnumValue(TypeInfo(Ecolor), Ename);<br>    Writeln(Ename, ‘,’, Evalue);<br>//    Writeln(Ord(Color));<br>//    Eindex:= Eindex+1;<br>//做优化<br>    Inc(Eindex);</p><p>  end;<br>end;</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>.github.io无法访问的问题</title>
+      <link href="2020/09/22/github-io%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>2020/09/22/github-io%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>GitHub.io托管不能访问的原因</p><p>访问被拒绝多是dns服务器出了问题，把DNS换成114.114.114.114不作用，8.8.8.8不作用</p><p>使用208.67.222.222（opendns）可以正常解析，将其设置为备用DNS即可</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>web.xml里面的init-param报错</title>
+      <link href="2020/09/22/web-xml%E9%87%8C%E9%9D%A2%E7%9A%84init-param%E6%8A%A5%E9%94%99/"/>
+      <url>2020/09/22/web-xml%E9%87%8C%E9%9D%A2%E7%9A%84init-param%E6%8A%A5%E9%94%99/</url>
+      
+        <content type="html"><![CDATA[<servlet>        <servlet-name>test</servlet-name>        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>        <!-- 表示容器再启动时立即加载servlet --><pre><code>    &lt;init-param&gt;    &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;    &lt;param-value&gt;web.xml&lt;/param-value&gt;    &lt;/init-param&gt;    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</code></pre></servlet><p>顺序问题</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2020/09/22/hello-world/"/>
+      <url>2020/09/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
