@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="{枚举；常量集
+常量，我们一开始就定义好的一些值，以后在程序的运行过程中不允许改变，例如圆周率type枚举名=(标识符1,标识符2…’)  ，不能使用字符串跟具体的值
+}
+const  yuanzhoulv: Double = 3.15;  //常量的定义方式，可以不进行类型声明，编译器会根据具体的" />
+  
 
   
   
@@ -13,13 +18,15 @@
   
   <title>delphi枚举 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="{枚举；常量集 常量，我们一开始就定义好的一些值，以后在程序的运行过程中不允许改变，例如圆周率type枚举名&#x3D;(标识符1,标识符2…’)  ，不能使用字符串跟具体的值 } const  yuanzhoulv: Double &#x3D; 3.15;  &#x2F;&#x2F;常量的定义方式，可以不进行类型声明，编译器会根据具体的值来决定常量的类型  yuanzhoulv2 &#x3D; 3; type&#x2F;&#x2F;（正常情况下索引都是从0开始 n">
+<meta property="og:type" content="article">
 <meta property="og:title" content="delphi枚举">
 <meta property="og:url" content="https://kaka754127264.github.io/2020/09/22/delphi%E6%9E%9A%E4%B8%BE/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="{枚举；常量集 常量，我们一开始就定义好的一些值，以后在程序的运行过程中不允许改变，例如圆周率type枚举名&#x3D;(标识符1,标识符2…’)  ，不能使用字符串跟具体的值 } const  yuanzhoulv: Double &#x3D; 3.15;  &#x2F;&#x2F;常量的定义方式，可以不进行类型声明，编译器会根据具体的值来决定常量的类型  yuanzhoulv2 &#x3D; 3; type&#x2F;&#x2F;（正常情况下索引都是从0开始 n">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-22T05:50:33.000Z">
-<meta property="article:modified_time" content="2020-09-22T05:50:33.771Z">
+<meta property="article:modified_time" content="2020-09-22T06:05:43.228Z">
 <meta name="twitter:card" content="summary">
   
   
@@ -84,7 +91,17 @@
 
     <div class="entry-content">
       
-        
+        <p>{<br>枚举；<br>常量集</p>
+<p>常量，我们一开始就定义好的一些值，以后在程序的运行过程中不允许改变，例如圆周率<br>type<br>枚举名=(标识符1,标识符2…’)  ，不能使用字符串跟具体的值</p>
+<p>}</p>
+<p>const<br>  yuanzhoulv: Double = 3.15;<br>  //常量的定义方式，可以不进行类型声明，编译器会根据具体的值来决定常量的类型<br>  yuanzhoulv2 = 3;</p>
+<p>type<br>//（<em>正常情况下索引都是从0开始</em> name=value）<br>  Edays = (sun = 0, mon = 1, tue = 2, wed = 3, thu = 4, fir = 5, sat = 6);</p>
+<p>  Ecolor = (red, green, blue);</p>
+<p>  //获取枚举中的单个元素<br>procedure demo1();<br>begin<br>  Color := Ecolor.blue;<br>  week := Edays.sun;</p>
+<p>  Writeln(Ord(Color), Ord(week), Ord(‘a’));<br>end;</p>
+<p>//使用循环遍历，枚举元素<br>procedure demo2();<br>begin<br>             //获取一个容器的最低位<br>       //遍历枚举<br>  Eindex := 0;<br>  for Color := Low(Ecolor) to High(Ecolor) do<br>  begin<br>//    Writeln(GetEnumName(TypeInfo(Ecolor), Eindex));<br>//    Writeln(GetEnumValue(TypeInfo(Ecolor), ‘red’));<br>    Ename := GetEnumName(TypeInfo(Ecolor), Eindex);<br>    Evalue := GetEnumValue(TypeInfo(Ecolor), Ename);<br>    Writeln(Ename, ‘,’, Evalue);<br>//    Writeln(Ord(Color));<br>//    Eindex:= Eindex+1;<br>//做优化<br>    Inc(Eindex);</p>
+<p>  end;<br>end;</p>
+
       
     </div><!-- .entry-content -->
 
