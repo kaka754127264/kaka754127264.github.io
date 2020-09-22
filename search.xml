@@ -8,7 +8,7 @@
       <link href="2020/09/22/delphi%E5%AD%90%E7%95%8C/"/>
       <url>2020/09/22/delphi%E5%AD%90%E7%95%8C/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="子界-sub-boundaries"><a href="#子界-sub-boundaries" class="headerlink" title="子界    (sub-boundaries)"></a>子界    (sub-boundaries)</h1><p>type 子界类型 标识符 = 常量1…常量2</p><p>常量1称为子界的下界，常量2称为子界的上界</p><h2 id=""><a href="#" class="headerlink" title="##"></a>##</h2><p>要求上界和下界为有序的数据类型 整数、字符、枚举</p><p>子界的上界大于或者等于下界</p><p>为了防止出现越界 </p><pre><code>type     TSubBound=1..10；type     age = 1..100;    letter = &#39;a&#39;..&#39;z&#39;;type     TsubBoundChar = &#39;a&#39;..&#39;z&#39;;</code></pre>]]></content>
       
       
       

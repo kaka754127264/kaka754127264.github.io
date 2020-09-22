@@ -31,7 +31,7 @@
   
   <!-- baidu webmaster push -->
   <script src='//push.zhanzhang.baidu.com/push.js'></script>
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-dark.css" type="text/css"></head>
 <body class="home blog custom-background custom-font-enabled single-author">
   <div id="page" class="hfeed site">
       <header id="masthead" class="site-header" role="banner">
@@ -84,7 +84,24 @@
 
     <div class="entry-content">
       
-        
+        <h1 id="子界-sub-boundaries"><a href="#子界-sub-boundaries" class="headerlink" title="子界    (sub-boundaries)"></a>子界    (sub-boundaries)</h1><p>type 子界类型 标识符 = 常量1…常量2</p>
+<p>常量1称为子界的下界，常量2称为子界的上界</p>
+<h2 id=""><a href="#" class="headerlink" title="##"></a>##</h2><p>要求上界和下界为有序的数据类型 整数、字符、枚举</p>
+<p>子界的上界大于或者等于下界</p>
+<p>为了防止出现越界 </p>
+<pre><code>type 
+    TSubBound=1..10；
+
+
+type 
+    age = 1..100;
+
+    letter = &#39;a&#39;..&#39;z&#39;;
+
+
+type 
+    TsubBoundChar = &#39;a&#39;..&#39;z&#39;;</code></pre>
+
       
     </div><!-- .entry-content -->
 
