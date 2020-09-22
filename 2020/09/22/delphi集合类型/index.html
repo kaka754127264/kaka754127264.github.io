@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="集合类型集合是由具有某些共同特征的元素构成的一个整体。在pascal中，一个集合是由具有同一有序类型的一组数据元素所组成，这一有序类型称为该集合的基类型
+集合的定义
+`var
+    Vset1：set1；
+    Vset2：set of byte；`
+1、集合类型的所有成员必须是同一有序类型且最" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>delphi集合类型 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="集合类型集合是由具有某些共同特征的元素构成的一个整体。在pascal中，一个集合是由具有同一有序类型的一组数据元素所组成，这一有序类型称为该集合的基类型 集合的定义 &#96;var     Vset1：set1；     Vset2：set of byte；&#96; 1、集合类型的所有成员必须是同一有序类型且最多只能含256个成员；2、集合类型成员具有唯一性，即同一集合类型中不允许含有相同的成员；3、集合类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="delphi集合类型">
+<meta property="og:url" content="https://kaka754127264.github.io/2020/09/22/delphi%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="集合类型集合是由具有某些共同特征的元素构成的一个整体。在pascal中，一个集合是由具有同一有序类型的一组数据元素所组成，这一有序类型称为该集合的基类型 集合的定义 &#96;var     Vset1：set1；     Vset2：set of byte；&#96; 1、集合类型的所有成员必须是同一有序类型且最多只能含256个成员；2、集合类型成员具有唯一性，即同一集合类型中不允许含有相同的成员；3、集合类型">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-22T06:40:52.000Z">
+<meta property="article:modified_time" content="2020-09-22T07:20:24.038Z">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-dark.css" type="text/css"></head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Hexo" rel="home">Hexo</a>
+      </h1>
+      
+        <h2 class="site-description hitokoto"></h2>
+        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">主页</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">文章</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-delphi集合类型" class="post-delphi集合类型 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      delphi集合类型
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://kaka754127264.github.io/2020/09/22/delphi%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/" data-id="ckfdmse1x0000pktw301e5bob" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="集合类型"><a href="#集合类型" class="headerlink" title="集合类型"></a>集合类型</h1><p><strong>集合是由具有某些共同特征的元素构成的一个整体。在pascal中，一个集合是由具有同一有序类型的一组数据元素所组成，这一有序类型称为该集合的基类型</strong></p>
+<p>集合的定义</p>
+<pre><code>`var
+    Vset1：set1；
+    Vset2：set of byte；`</code></pre>
+<p>1、集合类型的所有成员必须是<strong>同一</strong>有序类型且最多只能含256个成员；<br>2、集合类型成员具有唯一性，即同一集合类型中不允许含有相同的成员；<br>3、集合类型的值域由BaseType的值域决定</p>
+<h1 id="标准的定义方式"><a href="#标准的定义方式" class="headerlink" title="标准的定义方式"></a>标准的定义方式</h1><pre><code>`Type
+    Set1 = set of byte;
+    TMySet = set of Char;
+    TMySet1 = set of &#39;a&#39;..&#39;z&#39;; &#123;集合&amp;子界混合&#125;
+ var
+    TMyset2 = set of 1..2;
+    MySet: TMySet;`</code></pre>
+<p>byte是 基类型</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><pre><code>Type
+
+Set1 = set of byte;         //set1的成员为byte型，值域为0至255，共255整型值
+
+Set2 = set of 1..9;        //set2的成员为子界型，值域为1至9，共9整型值
+
+Set3 = set of（red，green，blue）;        //set3的成员为枚举型，值域为3个标识符</code></pre>
+<h1 id="合法的用法"><a href="#合法的用法" class="headerlink" title="合法的用法"></a>合法的用法</h1><pre><code>type
+  number = set of 0..9;
+  ch      = set of char;
+  days      = (sun,mon,tue,wed,thu,fri,sat);
+var
+  s:number;
+  c:ch;
+  week:days;</code></pre>
+<h1 id="等同于"><a href="#等同于" class="headerlink" title="等同于"></a>等同于</h1><pre><code>var 
+  s:set of 0..9；                               //子界    
+  c:set of char；
+  week: (sun ,mon ,tue ,wed ,thu ,fri ,sat); //枚举</code></pre>
+<p>集合的值放在方括号中，中间用逗号隔开。</p>
+<p>集合中没有任何元素，这样的集合称为空集。</p>
+<p>集合中连续元素的值可以使用子界型的表示方法。</p>
+<p>集合的值与集合内元素的出现次序无关。</p>
+<p>集合中的同一元素重复出现对集合的值没有影响。</p>
+<p>集合不能进行算数运算，集合是无序的，不能使用ord、pred（前一个元素）、succ（后一个元素）等函数。</p>
+<p>赋值运算，只能通过赋值语句给集合变量赋值，不能通过读语句赋值，也不能通过写语句直接输出集合变量的值。</p>
+<h1 id="集合的赋值操作"><a href="#集合的赋值操作" class="headerlink" title="集合的赋值操作"></a>集合的赋值操作</h1><p> #</p>
+<p>添加一个集合元素Include（s,1）；</p>
+<p>删除一个集合元素Exclude（s,1）；</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/09/22/delphi%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/">
+    <time datetime="2020-09-22T06:40:52.000Z" class="entry-date">
+        2020-09-22
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+    
+        <span class="nav-next"><a href="/2020/09/22/delphi%E5%AD%90%E7%95%8C/" rel="next">delphi子界 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/22/delphi%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/">delphi集合类型</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/delphi%E5%AD%90%E7%95%8C/">delphi子界</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/delphi%E6%9E%9A%E4%B8%BE/">delphi枚举</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/github-io%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98/">.github.io无法访问的问题</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/web-xml%E9%87%8C%E9%9D%A2%E7%9A%84init-param%E6%8A%A5%E9%94%99/">web.xml里面的init-param报错</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2020 Hexo
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
