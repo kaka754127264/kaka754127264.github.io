@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in " />
+  <meta name="description" content="MS sqlserver 修改表结构不允许保存的解决办法，在工具，选项，设计器，取消勾选“阻止保存要求重新创建表的更改”，然后确定" />
   
 
   
@@ -13,18 +13,20 @@
   
   
   
-  <title>Hello World | Hexo</title>
+  <title>sqlserver不让修改表结构的解决办法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="MS sqlserver 修改表结构不允许保存的解决办法，在工具，选项，设计器，取消勾选“阻止保存要求重新创建表的更改”，然后确定">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://kaka754127264.github.io/2020/09/22/hello-world/index.html">
+<meta property="og:title" content="sqlserver不让修改表结构的解决办法">
+<meta property="og:url" content="https://kaka754127264.github.io/2020/09/23/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="MS sqlserver 修改表结构不允许保存的解决办法，在工具，选项，设计器，取消勾选“阻止保存要求重新创建表的更改”，然后确定">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-22T02:11:53.612Z">
-<meta property="article:modified_time" content="2020-09-22T02:11:53.612Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/kaka754127264/GIt_Data/master/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png">
+<meta property="article:published_time" content="2020-09-23T02:42:09.000Z">
+<meta property="article:modified_time" content="2020-09-23T02:44:49.969Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kaka754127264/GIt_Data/master/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -67,7 +69,7 @@
 </header>
 
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-sqlserver不让修改表结构的解决办法" class="post-sqlserver不让修改表结构的解决办法 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -75,40 +77,29 @@
         
   
     <h1 class="entry-title article-title">
-      Hello World
+      sqlserver不让修改表结构的解决办法
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://kaka754127264.github.io/2020/09/22/hello-world/" data-id="ckfdhvzwz00003ktw01ntfab9" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+            <a href="javascript:void(0);" data-url="https://kaka754127264.github.io/2020/09/23/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" data-id="ckfesbcqq00003ktw6aab3njw" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p><img src="https://raw.githubusercontent.com/kaka754127264/GIt_Data/master/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png" alt="Image text"></p>
+<p>MS sqlserver 修改表结构不允许保存的解决办法，在工具，选项，设计器，取消勾选“阻止保存要求重新创建表的更改”，然后确定</p>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2020/09/22/hello-world/">
-    <time datetime="2020-09-22T02:11:53.612Z" class="entry-date">
-        2020-09-22
+    <a href="/2020/09/23/sqlserver%E4%B8%8D%E8%AE%A9%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+    <time datetime="2020-09-23T02:42:09.000Z" class="entry-date">
+        2020-09-23
     </time>
 </a>
     
@@ -121,8 +112,8 @@
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2020/09/22/web-xml%E9%87%8C%E9%9D%A2%E7%9A%84init-param%E6%8A%A5%E9%94%99/" rel="prev"><span class="meta-nav">←</span> web.xml里面的init-param报错</a></span>
     
+        <span class="nav-next"><a href="/2020/09/23/delphi-Adoconnection-%E8%BF%9E%E6%8E%A5MS-SQLServer/" rel="next">delphi Adoconnection 连接MS SQLServer <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
